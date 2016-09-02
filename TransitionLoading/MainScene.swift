@@ -17,9 +17,9 @@ class MainScene: SKScene {
     
     override init(size: CGSize) {
         super.init(size: size)
-        GameTextures.instance.getAssetsDictionaryFromAtlasNamed(AtlasNameConstants.SPRITE_ATLAS)
-        GameTextures.instance.getAssetsDictionaryFromAtlasNamed(AtlasNameConstants.INTERFACE_ATLAS)
-        GameTextures.instance.loadLevel1Assets()
+        //GameTextures.instance.getAssetsDictionaryFromAtlasNamed(AtlasNameConstants.SPRITE_ATLAS)
+        //GameTextures.instance.getAssetsDictionaryFromAtlasNamed(AtlasNameConstants.INTERFACE_ATLAS)
+        GameTextures.instance.loadInterfaceAssets()
         self.playButton = Button(spriteName: InterfaceNameConstants.PLAYBUTTON, position: CGPoint(x: UIScreen.mainScreen().bounds.size.width / 2, y: UIScreen.mainScreen().bounds.size.height * 0.7))
         
         self.sceneLabel.fontName = kDefaultFont

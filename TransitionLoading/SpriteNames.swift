@@ -13,13 +13,12 @@ import Foundation
 struct AtlasNameConstants {
     static let SPRITE_ATLAS = "Sprites"
     static let INTERFACE_ATLAS = "Interface"
-    //static let SOME_TEXTURE1 = "Some_Texture_In_Atlas"
-    //static let SOME_TEXTURE2 = "Some_Texture_Not_In_Atlas"
 }
 
 struct SpriteNameConstants {
-    static let PLAYER = "Player"
+    static let PLAYER = "Plane"
     static let ENEMY = "Enemy"
+    static let SPACE_SHIP_BULLET = "PlaneBullet"
 }
 
 
@@ -28,4 +27,5 @@ struct InterfaceNameConstants {
     static let BACKGROUND = "Background"
     static let STAR = "Starfield"
     static let MAGIC = "Magic"
+    static let TOUCH_CIRCLE = "TouchCircle"
 }
