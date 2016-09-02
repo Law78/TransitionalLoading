@@ -25,4 +25,7 @@ struct SpriteNameConstants {
 
 struct InterfaceNameConstants {
     static let PLAYBUTTON = "PlayButton"
+    static let BACKGROUND = "Background"
+    static let STAR = "Starfield"
+    static let MAGIC = "Magic"
 }

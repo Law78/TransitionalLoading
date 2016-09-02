@@ -61,7 +61,7 @@ class GameTextures {
         interfaceAssets = getAssetsDictionaryFromAtlasNamed(AtlasNameConstants.INTERFACE_ATLAS)
         //Textures that are not part of the atlas but should be part of level1 assets can be added here:
         //level1Assets[FileNameConstants.SOME_TEXTURE2] = SKTexture(imageNamed: FileNameConstants.SOME_TEXTURE2)
-        print("Inter",interfaceAssets)
+        //print("Inter",interfaceAssets)
         
     }
     func unloadLevel1Assets() {

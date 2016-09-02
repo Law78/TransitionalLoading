@@ -11,6 +11,8 @@ import SpriteKit
 class MainScene: SKScene {
     
     private var sceneLabel: SKLabelNode = SKLabelNode()
+    private var backgroundParticles: BackgroundParticles?
+
     private var playButton: Button?
     
     override init(size: CGSize) {
@@ -19,14 +21,18 @@ class MainScene: SKScene {
         GameTextures.instance.getAssetsDictionaryFromAtlasNamed(AtlasNameConstants.INTERFACE_ATLAS)
         GameTextures.instance.loadLevel1Assets()
         self.playButton = Button(spriteName: InterfaceNameConstants.PLAYBUTTON, position: CGPoint(x: UIScreen.mainScreen().bounds.size.width / 2, y: UIScreen.mainScreen().bounds.size.height * 0.7))
-        self.sceneLabel.fontName = "Edit Undo BRK"
+        
+        self.sceneLabel.fontName = kDefaultFont
         self.sceneLabel.fontColor = SKColor.whiteColor()
-        self.sceneLabel.fontSize = UIScreen.mainScreen().bounds.size.width * 0.1
+        self.sceneLabel.fontSize = kDefaultFontSize
         self.sceneLabel.text = "Menu Scene"
-        self.sceneLabel.position = CGPoint(x: UIScreen.mainScreen().bounds.size.width / 2, y: UIScreen.mainScreen().bounds.size.height / 2)
+        self.sceneLabel.position = kScreenCenter
+        
+        self.backgroundParticles =  BackgroundParticles(backgroundType: BackgroundParticles.BackgroundType.Main)
         
         self.addChild(self.sceneLabel)
         self.addChild(self.playButton!)
+        self.addChild(self.backgroundParticles!)
 
     }
     

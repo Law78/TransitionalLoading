@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		ED0B81E31D795121003EF12B /* BackgroundParticles.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED0B81E21D795121003EF12B /* BackgroundParticles.swift */; };
+		ED0B81E51D795175003EF12B /* GameParticles.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED0B81E41D795175003EF12B /* GameParticles.swift */; };
+		ED0B81E71D79518B003EF12B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED0B81E61D79518B003EF12B /* Constants.swift */; };
+		ED0B81E91D795281003EF12B /* Math.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED0B81E81D795281003EF12B /* Math.swift */; };
+		ED0B81EB1D79536C003EF12B /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED0B81EA1D79536C003EF12B /* Colors.swift */; };
+		ED0B81ED1D795692003EF12B /* Background.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED0B81EC1D795692003EF12B /* Background.swift */; };
+		ED0B81EF1D795717003EF12B /* SKSpriteNode+AspectFillToSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED0B81EE1D795717003EF12B /* SKSpriteNode+AspectFillToSize.swift */; };
 		EDA245E31D788B2C006DA95D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA245E21D788B2C006DA95D /* AppDelegate.swift */; };
 		EDA245E51D788B2C006DA95D /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = EDA245E41D788B2C006DA95D /* GameScene.sks */; };
 		EDA245E71D788B2C006DA95D /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA245E61D788B2C006DA95D /* GameScene.swift */; };
@@ -22,6 +29,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		ED0B81E21D795121003EF12B /* BackgroundParticles.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackgroundParticles.swift; sourceTree = "<group>"; };
+		ED0B81E41D795175003EF12B /* GameParticles.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameParticles.swift; sourceTree = "<group>"; };
+		ED0B81E61D79518B003EF12B /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		ED0B81E81D795281003EF12B /* Math.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Math.swift; sourceTree = "<group>"; };
+		ED0B81EA1D79536C003EF12B /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		ED0B81EC1D795692003EF12B /* Background.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Background.swift; sourceTree = "<group>"; };
+		ED0B81EE1D795717003EF12B /* SKSpriteNode+AspectFillToSize.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SKSpriteNode+AspectFillToSize.swift"; sourceTree = "<group>"; };
 		EDA245DF1D788B2C006DA95D /* TransitionLoading.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TransitionLoading.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDA245E21D788B2C006DA95D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EDA245E41D788B2C006DA95D /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
@@ -53,6 +67,9 @@
 		EDA245D61D788B2C006DA95D = {
 			isa = PBXGroup;
 			children = (
+				ED0B81E21D795121003EF12B /* BackgroundParticles.swift */,
+				ED0B81E41D795175003EF12B /* GameParticles.swift */,
+				ED0B81E61D79518B003EF12B /* Constants.swift */,
 				EDA245E11D788B2C006DA95D /* TransitionLoading */,
 				EDA245E01D788B2C006DA95D /* Products */,
 			);
@@ -77,6 +94,10 @@
 				EDA245EF1D788B2D006DA95D /* LaunchScreen.storyboard */,
 				EDA245F21D788B2D006DA95D /* Info.plist */,
 				EDA245F91D788B82006DA95D /* MainScene.swift */,
+				ED0B81EC1D795692003EF12B /* Background.swift */,
+				ED0B81EE1D795717003EF12B /* SKSpriteNode+AspectFillToSize.swift */,
+				ED0B81E81D795281003EF12B /* Math.swift */,
+				ED0B81EA1D79536C003EF12B /* Colors.swift */,
 				EDA245FF1D789203006DA95D /* TheGameScene.swift */,
 				EDA245FB1D788C46006DA95D /* GameTextures.swift */,
 				EDA245FD1D788EFF006DA95D /* SpriteNames.swift */,
@@ -169,13 +190,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				EDA245E71D788B2C006DA95D /* GameScene.swift in Sources */,
+				ED0B81ED1D795692003EF12B /* Background.swift in Sources */,
+				ED0B81E71D79518B003EF12B /* Constants.swift in Sources */,
+				ED0B81E31D795121003EF12B /* BackgroundParticles.swift in Sources */,
 				EDA245E91D788B2C006DA95D /* GameViewController.swift in Sources */,
 				EDA245E31D788B2C006DA95D /* AppDelegate.swift in Sources */,
 				EDA246031D789374006DA95D /* Button.swift in Sources */,
 				EDA245FC1D788C46006DA95D /* GameTextures.swift in Sources */,
 				EDA245FA1D788B82006DA95D /* MainScene.swift in Sources */,
+				ED0B81EB1D79536C003EF12B /* Colors.swift in Sources */,
+				ED0B81EF1D795717003EF12B /* SKSpriteNode+AspectFillToSize.swift in Sources */,
+				ED0B81E51D795175003EF12B /* GameParticles.swift in Sources */,
 				EDA246001D789203006DA95D /* TheGameScene.swift in Sources */,
 				EDA245FE1D788EFF006DA95D /* SpriteNames.swift in Sources */,
+				ED0B81E91D795281003EF12B /* Math.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -327,6 +355,7 @@
 				EDA245F71D788B2D006DA95D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

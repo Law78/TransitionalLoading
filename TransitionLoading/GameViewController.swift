@@ -13,7 +13,7 @@ class GameViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        let scene = MainScene(size: UIScreen.mainScreen().bounds.size)
+        let scene = MainScene(size: kViewSize)
         //let scene = MainScene(size: UIScreen.mainScreen().bounds.size) {
             // Configure the view.
             let skView = self.view as! SKView
